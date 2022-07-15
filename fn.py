@@ -24,8 +24,15 @@ while counter <= entries:
     counter += 1
     
 
-file_name = input("Input the Filename: ")
+# the string
+file_name_string = input("Input the Filename: ") + ".csv"
 
+# create a pandas dataframe using lists from above
+data_set = pd.DataFrame(
+    {'firstName': first_names,
+     'lastName': last_names,
+     'children': number_of_children
+    })
 
-#for i in range(entries):
-    
+# write the pandas dataframe to a csv
+data_set.to_csv(file_name_string)
