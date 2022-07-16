@@ -5,10 +5,9 @@ This program takes entries of first name, last name, and number
 of children. You will first select how many entries you would like
 to enter, then you will input the data for each entry. Finally, you
 will chose the filename for the .csv export.
-"""
+""")
 
 # exception handling to assure only an int or float is inputted
-
 while True:
     try:
         entries = int(input("How many entries would you like to submit?"))
